@@ -15,12 +15,12 @@ class ProdutoTest < ActiveSupport::TestCase
     produto.preco = -1
     assert produto.invalid?
     assert_equal ["deve ser maior ou igual a 0.01"],
-      produto.errors[:price]
+      produto.errors[:preco]
 
     produto.preco = 0
     assert produto.invalid?
     assert_equal ["deve ser maior ou igual a 0.01"],
-       produto.errors[:preco]
+      produto.errors[:preco]
 
     produto.preco = 1
     assert.valid?

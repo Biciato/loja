@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Cátalogo de Games</h1>
+
+<% cache @produtos do %>
+  <% @produtos.each do |produto| %>
+    <% cache produto do %>
+      <div class="entry">
+        <%= image_tag(produto.image_url) %>
+        <h3><%= produto.titulo %></h3>
+        <div class="preco_line">
+          <span class="preco"><%= number_to_currency_br(produto.preco) %></span>
+          <%= button_to 'Adicione ao carrinho', linha_items_path(produto_id: produto) %>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+<% end %>

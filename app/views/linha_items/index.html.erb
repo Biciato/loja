@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Linha Items</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Produto</th>
+      <th>Carrinho</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @linha_items.each do |linha_item| %>
+      <tr>
+        <td><%= linha_item.produto %></td>
+        <td><%= linha_item.carrinho %></td>
+        <td><%= link_to 'Show', linha_item %></td>
+        <td><%= link_to 'Edit', edit_linha_item_path(linha_item) %></td>
+        <td><%= link_to 'Destroy', linha_item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Linha Item', new_linha_item_path %>
