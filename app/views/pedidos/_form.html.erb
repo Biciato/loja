@@ -1,0 +1,39 @@
+<%= form_for(pedido) do |form| %>
+  <% if pedido.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(pedido.errors.count, "error") %>
+         pedido proibido de ser salvo:</h2>
+
+      <ul>
+      <% pedido.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :nome %>
+    <%= form.text_field :nome, id: :pedido_nome %>
+  </div>
+
+  <div class="field">
+    <%= form.label :endereco %>
+    <%= form.text_area :endereco, id: :pedido_endereco %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email, id: :pedido_email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tipo_pagamento %>
+    <%= form.select :tipo_pagamento, Pedido.tipo_pagamentos.keys,
+                                            prompt: 'Selecione método de pagamento' %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit 'Realize o pedido' %>
+  </div>
+<% end %>

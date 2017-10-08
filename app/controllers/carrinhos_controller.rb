@@ -57,8 +57,7 @@ class CarrinhosController < ApplicationController
     @carrinho.destroy if @carrinho.id == session[:carrinho_id]
     session[:carrinho_id] = nil
     respond_to do |format|
-      format.html { redirect_to loja_index_url, 
-        notice: 'Seu Carrinho está vazio' }
+      format.html { redirect_to loja_index_url }
       format.json { head :no_content }
     end
   end

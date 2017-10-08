@@ -1,3 +1,6 @@
+$('#notice').hide();
+
+if ($('#carrinho tr').length == 1) {$('#carrinho').show('blind', 1000); }
 $('#carrinho').html("<%=j render(@carrinho) %>");
 
 $('#corrente_item').css({'background-color':'#88ff88'}).

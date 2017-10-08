@@ -39,10 +39,13 @@ class CarrinhosControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should destroy carrinho" do
+    post linha_items_url, params: { produto_id: produtos(:ruby).id }
+    @carrinho = Carrinho.find(session[:carrinho_id])
+
     assert_difference('Carrinho.count', -1) do
       delete carrinho_url(@carrinho)
     end
 
-    assert_redirected_to carrinhos_url
+    assert_redirected_to loja_index_url
   end
 end

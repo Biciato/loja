@@ -19,7 +19,10 @@
       <div id="side">
         <div id="carrinho">
           <% if @carrinho %>
-            <%= render @carrinho %>
+            <%= esconda_div_se(@carrinho.linha_items.empty?,
+                  id: 'carrinho') do %>
+              <%= render @carrinho %>
+            <% end %>  
           <% end %>
         </div>
         <ul>

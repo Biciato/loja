@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome: Dave Thomas
+  endereco: MyText
+  email: dave@example.org
+  tipo_pagamento: Check
+
+two:
+  nome: MyString
+  endereco: MyText
+  email: MyString
+  tipo_pagamento: 1

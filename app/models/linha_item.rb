@@ -1,5 +1,6 @@
 class LinhaItem < ApplicationRecord
-  belongs_to :produto
+  belongs_to :pedido, optional: true
+  belongs_to :produto, optional: true
   belongs_to :carrinho
 
   def preco_total

@@ -5,5 +5,5 @@ one:
   carrinho: one
 
 two:
-  produto: two
-  carrinho: two
+  produto: ruby
+  carrinho: one

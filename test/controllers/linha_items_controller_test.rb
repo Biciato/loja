@@ -17,10 +17,12 @@ class LinhaItemsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create linha_item" do
     assert_difference('LinhaItem.count') do
-      post linha_items_url, params: { linha_item: { carrinho_id: @linha_item.carrinho_id, produto_id: @linha_item.produto_id } }
+      post linha_items_url, params: {  produto_id: produtos(:ruby).id }
     end
+    follow_redirect!
 
-    assert_redirected_to linha_item_url(LinhaItem.last)
+    assert_select 'h2', 'Seu carrinho'
+    assert_select 'td', "Programming Ruby 1.9"
   end
 
   test "should show linha_item" do
@@ -34,7 +36,8 @@ class LinhaItemsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update linha_item" do
-    patch linha_item_url(@linha_item), params: { linha_item: { carrinho_id: @linha_item.carrinho_id, produto_id: @linha_item.produto_id } }
+    patch linha_item_url(@linha_item),
+      params: { linha_item: { produto_id: @linha_item.produto_id } }
     assert_redirected_to linha_item_url(@linha_item)
   end
 

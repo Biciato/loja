@@ -1,6 +1,6 @@
 <h2>Seu carrinho</h2>
 <table>
-  <%= render carrinho.linha_items %>
+  <%= render(carrinho.linha_items) %>
 
   <tr class="total_linha">
     <td colspan="2">Total</td>
@@ -9,5 +9,6 @@
 
 </table>
 
+<%= button_to "Finalizar", new_pedido_path, method: :get %>
 <%= button_to 'Esvazie o carrinho', carrinho, method: :delete,
       data: { coonfirm: 'Tem certeza ?'} %>

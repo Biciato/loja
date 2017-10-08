@@ -42,11 +42,17 @@ class ProdutosController < ApplicationController
   def update
     respond_to do |format|
       if @produto.update(produto_params)
-        format.html { redirect_to @produto, notice: 'Produto was successfully updated.' }
+        format.html { redirect_to @produto,
+          notice: 'Produto atualizado com sucesso' }
         format.json { render :show, status: :ok, location: @produto }
+
+        @produtos = Produto.all
+        ActionCable.server.broadcast 'produtos',
+          html: render_to_string('loja/index', layout: false)
       else
         format.html { render :edit }
-        format.json { render json: @produto.errors, status: :unprocessable_entity }
+        format.json { render json: @produto.errors,
+          status: :unprocessable_entity }
       end
     end
   end
@@ -58,6 +64,16 @@ class ProdutosController < ApplicationController
     respond_to do |format|
       format.html { redirect_to produtos_url, notice: 'Produto was successfully destroyed.' }
       format.json { head :no_content }
+    end
+  end
+
+  def quem_comprou
+    @produto = Produto.find(params[:id])
+    @ultimo_pedido = @produto.pedidos.order(:updated_at).last
+    if stale?(@ultimo_pedido)
+      respond_to do |format|
+        format.atom
+      end
     end
   end
 

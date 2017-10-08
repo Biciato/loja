@@ -1,5 +1,6 @@
 class Produto < ApplicationRecord
   has_many :linha_items
+  has_many :pedidos, through: :linha_items
 
   before_destroy :assegure_nao_referenciado_por_alguma_linha_item
 

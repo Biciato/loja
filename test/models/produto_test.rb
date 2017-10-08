@@ -1,6 +1,7 @@
 require 'test_helper'
 
 class ProdutoTest < ActiveSupport::TestCase
+  fixtures :produtos
   test "produto attributes não deve ser vazio"do
     produto = Produto.new
     assert produto.invalid?
@@ -14,12 +15,12 @@ class ProdutoTest < ActiveSupport::TestCase
                           image_url: "zzz.jpg")
     produto.preco = -1
     assert produto.invalid?
-    assert_equal ["deve ser maior ou igual a 0.01"],
+    assert_equal ["must be greater than or equal to 0.01"],
       produto.errors[:preco]
 
     produto.preco = 0
     assert produto.invalid?
-    assert_equal ["deve ser maior ou igual a 0.01"],
+    assert_equal ["must be greater than or equal to 0.01"],
       produto.errors[:preco]
 
     produto.preco = 1
@@ -44,5 +45,24 @@ class ProdutoTest < ActiveSupport::TestCase
     bad.each do |name|
       assert new_produto(name).invalid?, "#{name} deve ser invalido"
     end
+  end
+
+  test "produto nao e valido sem um titulo unico" do
+    produto = Produto.new(titulo: produtos(:ruby).titulo,
+                          preco:  1,
+                          image_url: "fred.gif")
+
+    assert produto.invalid?
+    assert_equal ["has already been taken"], produto.errors[:titulo]
+  end
+
+  test "produto nao e valido sem um titulo unico - i18n" do
+    produto = Produto.new(titulo: produtos(:ruby).titulo,
+                          preco:  1,
+                          image_url: "fred.gif")
+
+    assert produto.invalid?
+    assert_equal [I18n.translate("errors.messages.taken")],
+                  produto.errors[:titulo]
   end
 end
