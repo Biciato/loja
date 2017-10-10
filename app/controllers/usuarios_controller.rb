@@ -60,10 +60,15 @@ class UsuariosController < ApplicationController
   def destroy
     @usuario.destroy
     respond_to do |format|
-      format.html { redirect_to usuarios_url, notice: 'Usuario was successfully destroyed.' }
+      format.html { redirect_to usuarios_url,
+        notice: "Usuário #{@usuario.nome} deletado" }
       format.json { head :no_content }
     end
   end
+
+rescue_from 'Usuario::Error' do |exception|
+  redirect_to usuarios_url, notice: exception.message
+end
 
   private
     # Use callbacks to share common setup or constraints between actions.

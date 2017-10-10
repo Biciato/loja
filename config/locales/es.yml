@@ -1,0 +1,27 @@
+en:
+  layouts:
+    application:
+      titulo: "Loja Online Video-Juego"
+      home: "Inicio"
+      questions: "Preguntas"
+      news: "Noticias"
+      contact: "Contacto"
+
+  loja:
+    index:
+      titulo_html: "Su catalogo de video_juegos"
+      add_html: "Adicione al Carrito"
+
+  carrinhos:
+    carrinho:
+      titulo: 'carrito de la compra'
+      esvazie: 'Vaciar Carrito'
+      finalizar: 'Comprar'
+
+  number: currency:
+    format:
+      unit: "$US"
+      precision: 2
+      separator: ","
+      delimiter: "."
+      format: "%n&nbsp;%u"    

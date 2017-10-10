@@ -1,5 +1,6 @@
 class PedidosController < ApplicationController
   include CarrinhoCorrente
+  skip_before_action :authorize, only: [:new, :create]
   before_action :set_carrinho, only: [:new, :create]
   before_action :assegure_carrinho_nao_esta_vazio, only: :new
   before_action :set_pedido, only: [:show, :edit, :update, :destroy]

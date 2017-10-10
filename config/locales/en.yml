@@ -30,4 +30,29 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  layouts:
+    application:
+      titulo: "Loja Online Games"
+      home: "Home"
+      questions: "Questions"
+      news: "News"
+      contact: "Contact"
+
+  loja:
+    index:
+      titulo_html: "Seu catálogo de games"
+      add_html: "Adicione ao carrinho"
+
+  carrinhos:
+    carrinho:
+      titulo: 'Seu carrinho'
+      esvazie: 'Esvazie seu carrinho'
+      finalizar: 'Finalize seu pedido'
+
+  number: currency:
+    format:
+      unit: "$"
+      precision: 2
+      separator: "."
+      delimiter: ","
+      format: "%u%n"        

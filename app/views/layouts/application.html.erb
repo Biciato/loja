@@ -22,15 +22,23 @@
             <%= esconda_div_se(@carrinho.linha_items.empty?,
                   id: 'carrinho') do %>
               <%= render @carrinho %>
-            <% end %>  
+            <% end %>
           <% end %>
         </div>
         <ul>
-          <li><a href="http://www....">Home</a></li>
-          <li><a href="http://www..../faq">FAQ</a></li>
-          <li><a href="http://www..../novidades">Novidades</a></li>
-          <li><a href="http://www..../contato">Contato</a></li>
+          <li><a href="http://www...."><%= t('.home') %></a></li>
+          <li><a href="http://www..../faq"><%= t('.questions') %></a></li>
+          <li><a href="http://www..../novidades"><%= t('.news') %></a></li>
+          <li><a href="http://www..../contato"><%= t('.contact') %></a></li>
         </ul>
+        <% if session[:usuario_id] %>
+          <ul>
+            <li><%= link_to 'Pedidos',  pedidos_path  %>
+            <li><%= link_to 'Produtos', produtos_path %>
+            <li><%= link_to 'Usuários', usuarios_path %>
+          </ul>
+          <%= button_to 'Logout', logout_path, method: :delete %>
+        <% end %>
       </div>
       <div id="main">
         <%= yield %>

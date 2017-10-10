@@ -13,27 +13,27 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :nome %>
+    <%= form.label :nome, t('.nome') %>
     <%= form.text_field :nome, id: :pedido_nome %>
   </div>
 
   <div class="field">
-    <%= form.label :endereco %>
+    <%= form.label :endereco, t('.endereco_html') %>
     <%= form.text_area :endereco, id: :pedido_endereco %>
   </div>
 
   <div class="field">
-    <%= form.label :email %>
+    <%= form.label :email, t('.email') %>
     <%= form.text_field :email, id: :pedido_email %>
   </div>
 
   <div class="field">
-    <%= form.label :tipo_pagamento %>
+    <%= form.label :tipo_pagamento, t('.tipo_pagamento') %>
     <%= form.select :tipo_pagamento, Pedido.tipo_pagamentos.keys,
-                                            prompt: 'Selecione método de pagamento' %>
+                                            prompt: t('.pagamento_prompt_html') %>
   </div>
 
   <div class="actions">
-    <%= form.submit 'Realize o pedido' %>
+    <%= form.submit t('.submit') %>
   </div>
 <% end %>
