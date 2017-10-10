@@ -37,7 +37,7 @@ class PedidosController < ApplicationController
         session[:carrinho_id] = nil
         PedidoMailer.recebido(@pedido).deliver_later
         format.html { redirect_to loja_index_url,
-          notice: 'Obrigado pelo seu pedido.' }
+          notice: I18n.t('.obrigado') }
         format.json { render :show, status: :created,
           location: @pedido }
       else

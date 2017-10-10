@@ -49,10 +49,24 @@ en:
       esvazie: 'Esvazie seu carrinho'
       finalizar: 'Finalize seu pedido'
 
-  number: currency:
-    format:
-      unit: "$"
-      precision: 2
-      separator: "."
-      delimiter: ","
-      format: "%u%n"        
+  number:
+    currency:
+     format:
+       unit:     "$"
+       precision: 2
+       separator: "."
+       delimiter: ","
+       format: "%u%n"
+
+  pedidos:
+    new:
+      legend:                "Por favor, entre seus detalhes"
+    form:
+      nome:                  "Nome"
+      endereco_html:         "Endereço"
+      email:                 "E-mail"
+      tipo_pagamento:        "Pague com"
+      pagamento_prompt_html: "Selecione o meio de pagamento"
+      submit:                "Realizar Pedido"
+
+  obrigado: 'Obrigado pelo seu pedido'

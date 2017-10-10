@@ -18,10 +18,46 @@ en:
       esvazie: 'Vaciar Carrito'
       finalizar: 'Comprar'
 
-  number: currency:
-    format:
+  number:
+    currency:
+     format:
       unit: "$US"
       precision: 2
       separator: ","
       delimiter: "."
-      format: "%n&nbsp;%u"    
+      format: "%n&nbsp%u"
+
+  pedidos:
+    new:
+      legend:                "Por favor, introduza sus datos"
+    form:
+      nome:                  "Nombre"
+      endereco_html:         "Direcione"
+      email:                 "E-mail"
+      tipo_pagamento:        "Forma de pago"
+      pagamento_prompt_html: "Selecione o meio de pagamento"
+      submit:                "Realizar Pedido"
+
+  activerecord:
+    errors:
+      messages:
+        inclusion: "no est&aacute; incluido en la lista"
+        blank:     "no puede quedar en blanco"
+    errors:
+      template:
+        body:      "Hay problemas con los siguientes campos:"
+        header:
+          one:     "1 error ha impedido que este %{model} se guarde"
+          other:   "%{count} errores han impedido que este %{model} se guarde"
+
+    activerecord:
+     models:
+       order: "pedido"
+     attributes:
+       order:
+         address: "Direcci&oacute;n"
+         name: "Nombre"
+         email: "E-mail"
+         pay_type: "Forma de pago"
+
+    obrigado: "Gracias por su pedido"

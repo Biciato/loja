@@ -1,12 +1,13 @@
 <%= form_for(pedido) do |form| %>
   <% if pedido.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(pedido.errors.count, "error") %>
-         pedido proibido de ser salvo:</h2>
+      <h2><%=raw t('errors.template.header', count: @pedido.errors.count,
+        model: t('activerecord.models.pedido')) %> </h2>
+      <p><%= t('errors.template.body') %></p>
 
       <ul>
       <% pedido.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
+        <li><%=raw message %></li>
       <% end %>
       </ul>
     </div>
