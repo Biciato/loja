@@ -2,58 +2,61 @@ require 'test_helper'
 
 class UserStoriesTest < ActionDispatch::IntegrationTest
   fixtures :produtos
+  include ActiveJob::TestHelper
 
-  start_order_count = Pedido.count
-  ruby_book = produtos(:ruby)
+  test "buying a product" do
 
-  get "/"
-  assert_responde :sucess
-  assert_select 'h1', 'Your Pragmatic Catalog'
+    start_order_count = Pedido.count
+    ruby_book = produtos(:ruby)
 
-  post '/linha_items', params: { produto_id: ruby_book.id }, xhr: true
-  assert_responde :sucess
+    get "/"
+    assert_response :success
+    assert_select 'h1', 'Your Pragmatic Catalog'
 
-  carrinho = Carrinho.find(session[:carrinho_id])
-  assert_equal 1, carrinho.linha_items.size
-  assert_equal ruby_book, carrinho.linha_items[0].produto
+    post '/linha_items', params: { produto_id: ruby_book.id }, xhr: true
+    assert_response :success
 
-  get "/pedidos/new"
-  assert_responde :sucess
-  assert_select 'legend', 'Por favor, entre seus detalhes'
+    carrinho = Carrinho.find(session[:carrinho_id])
+    assert_equal 1, carrinho.linha_items.size
+    assert_equal ruby_book, carrinho.linha_items[0].produto
 
-  post "/pedidos", params: {
-    pedido: {
-      nome: "Dave Thomas",
-      endereco: "123 The Street",
-      email: "dave@example.com",
-      tipo_pagamento: "Check"
-    }
-  }
+    get "/pedidos/new"
+    assert_response :success
+    assert_select 'legend', 'Por favor, entre seus detalhes'
 
-  follow_redirect!
+    perform_enqueued_jobs do
+      post "/pedidos", params: {
+        pedido: {
+          nome: "Dave Thomas",
+          endereco: "123 The Street",
+          email: "dave@example.com",
+          tipo_pagamento: "Check"
+        }
+      }
 
-  assert_response :success
-  assert_select 'h1', "Your Pragmatic Catalog"
-  carrinho = Carrinho.find(session[:cart_id])
-  assert_equal 0, carrinho.linha_items.size
+      follow_redirect!
 
-  assert_equal start_pedido_count + 1, Pedido.count
-  pedido = Pedido.last
+      assert_response :success
+      assert_select 'h1', "Your Pragmatic Catalog"
+      carrinho = Carrinho.find(session[:cart_id])
+      assert_equal 0, carrinho.linha_items.size
 
-  assert_equal "Dave Thomas", pedido.nome
-  assert_equal "123 The Street", pedido.endereco
-  assert_equal "dave@example.com", pedido.email
-  assert_equal "Check", pedido.tipo_pagamento
+      assert_equal start_pedido_count + 1, Pedido.count
+      pedido = Pedido.last
 
-  assert_equal 1, pedido.linha_items.size
-  line_item = pedido.linha_items[0]
-  assert_equal ruby_book, linha_item.produto
+      assert_equal "Dave Thomas", pedido.nome
+      assert_equal "123 The Street", pedido.endereco
+      assert_equal "dave@example.com", pedido.email
+      assert_equal "Check", pedido.tipo_pagamento
 
-  mail = ActionMailer::Base.deliveries.last
-  assert_equal ["dave@example.com"], mail.to
-  assert_equal 'Leandro Biciato <loja@example.com>', mail[:from].value
-  assert_equal "Confirmação de pedido da FG Games", mail.subject
-  # test "the truth" do
-  #   assert true
-  # end
+      assert_equal 1, pedido.linha_items.size
+      line_item = pedido.linha_items[0]
+      assert_equal ruby_book, linha_item.produto
+
+      mail = ActionMailer::Base.deliveries.last
+      assert_equal ["dave@example.com"], mail.to
+      assert_equal 'Leandro Biciato <loja@example.com>', mail[:from].value
+      assert_equal "Confirmação de pedido da FG Games", mail.subject
+    end
+  end
 end

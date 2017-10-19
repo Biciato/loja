@@ -1,0 +1,51 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+/* line 18, /Users/leandrobiciato/Desktop/Ruby/loja/app/assets/stylesheets/application.scss */
+#menu-top {
+  background-color: black;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  width: 800px;
+  height: 200px;
+}
+/* line 26, /Users/leandrobiciato/Desktop/Ruby/loja/app/assets/stylesheets/application.scss */
+#menu-top table {
+  background-color: black;
+  color: gold;
+  height: 200px;
+  width: 800px;
+}
+/* line 32, /Users/leandrobiciato/Desktop/Ruby/loja/app/assets/stylesheets/application.scss */
+#menu-top table #um {
+  height: 80px;
+  width: 800px;
+}
+/* line 37, /Users/leandrobiciato/Desktop/Ruby/loja/app/assets/stylesheets/application.scss */
+#menu-top table #dois {
+  height: 80px;
+  width: 800px;
+}
+/* line 41, /Users/leandrobiciato/Desktop/Ruby/loja/app/assets/stylesheets/application.scss */
+#menu-top table #dois #carrinho_link {
+  height: 5%;
+  width: 5%;
+}
+/* line 47, /Users/leandrobiciato/Desktop/Ruby/loja/app/assets/stylesheets/application.scss */
+#menu-top table #tres {
+  height: 80px;
+  width: 800px;
+}

@@ -1,0 +1,150 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body {
+  background-color: black;
+  font-family: helvetica;
+  margin: 0px;
+  border: 0px;
+  margin: 0px;
+}
+
+
+
+#linha1 {
+
+  border: none;
+  width: 920px;
+  height: 70px;
+  margin-left: 190px;
+  margin-top: 0px;
+  padding: 0;
+
+}
+
+#linha2 {
+
+  border: 0px;
+  width: 840px;
+  height: 40px;
+  margin: 5px 0px 0px 190px;
+  padding: 2px;
+
+}
+
+#linha1 img {
+  border: none;
+  margin: 0;
+  overflow: visible;
+  float: right;
+}
+
+#linha1 img[alt="Fifa18"] {
+  float: left;
+}
+
+#linha1 ul {
+  text-align: center;
+  padding-top: 20px;
+  float: left;
+  width: 510px;
+
+}
+
+#linha1 ul li {
+  display: inline;
+  margin: 20px;
+  font-size: 20px;
+  padding: 20px;
+}
+
+#linha1 ul a {
+  text-decoration: none;
+  color: gold;
+}
+
+#linha2 li {
+
+  float: right;
+  border-right:1px solid black;
+  padding: 0;
+  margin: 0;
+  width: 59px;
+  height: 40px;
+
+}
+
+#linha2 ul {
+
+    width: 120px;
+    height: 40px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: gold;
+    border-bottom: 1px solid gold;
+
+}
+
+#linha2 li a {
+
+  display: block;
+  color: gray;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  height: 40px;
+  width: 59px;
+
+}
+
+#linha2 li a img {
+  align-self: auto;
+}
+
+#linha2 form {
+  float: left;
+  width: 610px;
+  height: 40px;
+}
+
+#linha2 input[type="text"] {
+  position: relative;
+  width: 500px;
+  height: 40px;
+  margin: 0px;
+  padding: 0px;
+  border: 1px solid gold;
+  background-color: black;
+  color: white;
+  font-size: 15px;
+}
+
+#linha2 input[type="submit"] {
+  position: absolute;
+  font-family: Helvetica;
+  font-size: 20px;
+  width: 80px;
+  height: 42px;
+  margin: 0px;
+  padding: 0;
+  color: black;
+  background: gold;
+  border: 1px solid gold;
+}

@@ -66,8 +66,9 @@ class UsuariosController < ApplicationController
     end
   end
 
-rescue_from 'Usuario::Error' do |exception|
+  rescue_from 'Usuario::Error' do |exception|
   redirect_to usuarios_url, notice: exception.message
+
 end
 
   private

@@ -1,0 +1,47 @@
+/* line 5, /Users/leandrobiciato/Desktop/Ruby/loja/app/assets/stylesheets/loja.scss */
+.loja h1 {
+  margin: 0;
+  padding-bottom: 0.5em;
+  font: 150% sans-serif;
+  color: #226;
+  border-bottom: 3px dotted #77d;
+}
+/* line 13, /Users/leandrobiciato/Desktop/Ruby/loja/app/assets/stylesheets/loja.scss */
+.loja .entry {
+  overflow: auto;
+  margin-top: 1em;
+  border-bottom: 1px dotted #77d;
+  min-height: 100px;
+}
+/* line 19, /Users/leandrobiciato/Desktop/Ruby/loja/app/assets/stylesheets/loja.scss */
+.loja .entry img {
+  width: 80px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  position: absolute;
+}
+/* line 26, /Users/leandrobiciato/Desktop/Ruby/loja/app/assets/stylesheets/loja.scss */
+.loja .entry h3 {
+  font-size: 120%;
+  font-family: sans-serif;
+  margin-left: 100px;
+  margin-top: 0;
+  margin-bottom: 2px;
+  color: #227;
+}
+/* line 35, /Users/leandrobiciato/Desktop/Ruby/loja/app/assets/stylesheets/loja.scss */
+.loja .entry p, .loja .entry div.preco_line {
+  margin-left: 100px;
+  margin-top: 0.5em;
+  margin-bottom: 0.8em;
+}
+/* line 40, /Users/leandrobiciato/Desktop/Ruby/loja/app/assets/stylesheets/loja.scss */
+.loja .entry p form, .loja .entry p div, .loja .entry div.preco_line form, .loja .entry div.preco_line div {
+  display: inline;
+}
+/* line 45, /Users/leandrobiciato/Desktop/Ruby/loja/app/assets/stylesheets/loja.scss */
+.loja .entry .preco {
+  color: #44a;
+  font-weight: bold;
+  margin-right: 3em;
+}

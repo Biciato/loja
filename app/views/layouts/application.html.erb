@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Loja Online Games</title>
+    <title>FG Games</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag 'application', media: 'all',
@@ -10,38 +10,65 @@
     'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body class="<%= controller.controller_name %>"">
-    <div id="banner">
-      <%= image_tag 'logo.jpg', alt: "Catálogo de Games" %>
-      <span class="titulo"><%= @titulo_pagina %></span>
-    </div>
-    <div id="columns">
-      <div id="side">
-        <div id="carrinho">
-          <% if @carrinho %>
-            <%= esconda_div_se(@carrinho.linha_items.empty?,
-                  id: 'carrinho') do %>
-              <%= render @carrinho %>
-            <% end %>
-          <% end %>
-        </div>
+  <body class="<%= controller.controller_name %>">
+
+      <div id="linha1">
+        <%= image_tag('fifa18.jpg', size: "120x70") %>
         <ul>
-          <li><a href="http://www...."><%= t('.home') %></a></li>
-          <li><a href="http://www..../faq"><%= t('.questions') %></a></li>
-          <li><a href="http://www..../novidades"><%= t('.news') %></a></li>
-          <li><a href="http://www..../contato"><%= t('.contact') %></a></li>
+          <li><%= link_to "Home", loja_index_path %></li>
+          <li><%= link_to "Novidades" %></li>
+          <li><%= link_to "Sobre" %></li>
         </ul>
-        <% if session[:usuario_id] %>
-          <ul>
-            <li><%= link_to 'Pedidos',  pedidos_path  %>
-            <li><%= link_to 'Produtos', produtos_path %>
-            <li><%= link_to 'Usuários', usuarios_path %>
-          </ul>
-          <%= button_to 'Logout', logout_path, method: :delete %>
+        <%= link_to image_tag("logo.jpg", size: "180x150"), loja_index_path %>
+      </div>
+      <div id="linha2">
+        <%= form_tag("/search", method: "get") do %>
+        <%= text_field_tag(:q) %>
+        <%= submit_tag("Buscar") %>
         <% end %>
+        <ul>
+          <li><%= link_to "Minha conta", login_path %></li>
+          <li><%= link_to image_tag("carrinho.jpg", size: "59x43") %></li>
+        </ul>
       </div>
-      <div id="main">
-        <%= yield %>
+      <div id="navbar">
+
       </div>
-  </body>
+
+    <!-- <div id="main"> -->
+      <!-- <%= yield %> -->
+    <!-- </div> -->
+    <!-- <div id="menu-down"> -->
+      <!-- <%= link_to image_tag("logo.jpg"), loja_index_path %> -->
+      <!-- <p>Central de Atendimento</p> -->
+      <!-- <telephone>19-XXXX-XXXX</telephone>
+      <dl>
+        <dt>Tire suas dúvidas</dt>
+        <dd><%= link_to "Quem somos" %></dd>
+        <dd><%= link_to "Termos de Uso" %></dd>
+        <dd><%= link_to "Política de privacidade" %></dd>
+        <dd><%= link_to "FAQ" %></dd>
+        <dd><%= link_to "Trabalhe conosco" %></dd>
+        <dd><%= link_to "Política de Trocas e devoluções" %></dd>
+      </dl>
+      <dl>
+        <dt>Formas de pagamento</dt>
+        <dd>
+          <%= image_tag "ae.jpg" %>
+          <%=  image_tag "boleto.jpg" %>
+          <%=  image_tag "hyper.jpg" %>
+        </dd>
+        <dd>
+          <%= image_tag "itau.jpg" %>
+          <%= image_tag "mastercard.jpg" %>
+          <%= image_tag "visa.jpg" %>
+        </dd>
+      </dl>
+      <dt>Redes Sociais</dt>
+        <a href="http://www.facebook.com.br"><%= image_tag "facebook.jpg", size: "40x40" %></a>
+        <a href="http://www.google.com.br"><%= image_tag "google.jpg", size: "40x40" %></a>
+        <a href="http://www.twitter.com.br"><%= image_tag "twitter.jpg", size: "40x40" %></a>
+        <a href="http://www.youtube.com.br"><%= image_tag "youtube.jpg", size: "40x40" %></a>
+      </dt> -->
+    </body>
 </html>

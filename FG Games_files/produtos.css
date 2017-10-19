@@ -1,0 +1,28 @@
+/* line 5, /Users/leandrobiciato/Desktop/Ruby/loja/app/assets/stylesheets/produtos.scss */
+.produtos table {
+  border-collapse: collapse;
+}
+/* line 9, /Users/leandrobiciato/Desktop/Ruby/loja/app/assets/stylesheets/produtos.scss */
+.produtos table tr td {
+  padding: 5px;
+  vertical-align: top;
+}
+/* line 14, /Users/leandrobiciato/Desktop/Ruby/loja/app/assets/stylesheets/produtos.scss */
+.produtos .list_image {
+  width: 60px;
+  height: 70px;
+}
+/* line 19, /Users/leandrobiciato/Desktop/Ruby/loja/app/assets/stylesheets/produtos.scss */
+.produtos .list_actions {
+  font-size: x-small;
+  text-align: right;
+  padding-left: lem;
+}
+/* line 25, /Users/leandrobiciato/Desktop/Ruby/loja/app/assets/stylesheets/produtos.scss */
+.produtos .list_line_even {
+  background: #e0f8f8;
+}
+/* line 29, /Users/leandrobiciato/Desktop/Ruby/loja/app/assets/stylesheets/produtos.scss */
+.produtos .list_line_odd {
+  background: #f0f8f8;
+}

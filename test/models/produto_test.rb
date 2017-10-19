@@ -24,7 +24,7 @@ class ProdutoTest < ActiveSupport::TestCase
       produto.errors[:preco]
 
     produto.preco = 1
-    assert.valid?
+    assert produto.valid?
   end
 
   def new_produto(image_url)

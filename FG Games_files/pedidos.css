@@ -1,0 +1,36 @@
+/* line 6, /Users/leandrobiciato/Desktop/Ruby/loja/app/assets/stylesheets/pedidos.scss */
+.loja_form fieldset {
+  background: yellow;
+}
+/* line 9, /Users/leandrobiciato/Desktop/Ruby/loja/app/assets/stylesheets/pedidos.scss */
+.loja_form fieldset legend {
+  color: yellow;
+  background: black;
+  font-family: sans-serif;
+  padding: 0.2em 1em;
+}
+/* line 16, /Users/leandrobiciato/Desktop/Ruby/loja/app/assets/stylesheets/pedidos.scss */
+.loja_form fieldset div {
+  margin-bottom: 0.3em;
+}
+/* line 22, /Users/leandrobiciato/Desktop/Ruby/loja/app/assets/stylesheets/pedidos.scss */
+.loja_form form label {
+  width: 5em;
+  float: left;
+  text-align: right;
+  padding-top: 0.2em;
+  margin-right: 0.1em;
+  display: block;
+}
+/* line 31, /Users/leandrobiciato/Desktop/Ruby/loja/app/assets/stylesheets/pedidos.scss */
+.loja_form form select, .loja_form form textarea, .loja_form form input {
+  margin-left: 0.5em;
+}
+/* line 35, /Users/leandrobiciato/Desktop/Ruby/loja/app/assets/stylesheets/pedidos.scss */
+.loja_form form .submit {
+  margin-left: 4em;
+}
+/* line 39, /Users/leandrobiciato/Desktop/Ruby/loja/app/assets/stylesheets/pedidos.scss */
+.loja_form form br {
+  display: none;
+}

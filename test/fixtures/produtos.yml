@@ -2,15 +2,15 @@
 
 one:
   titulo: MyString
-  image_url: MyString
+  image_url: fifa18.jpg
   preco: 9.99
 
 two:
   titulo: MyString
-  image_url: MyString
+  image_url: fifa18.jpg
   preco: 9.99
 
 ruby:
   titulo: Programming Ruby 1.9
   preco: 49.50
-  image_url: ruby.png
+  image_url: fifa18.jpg

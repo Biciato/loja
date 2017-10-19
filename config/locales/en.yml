@@ -38,17 +38,20 @@ en:
       news: "News"
       contact: "Contact"
 
+en:
   loja:
     index:
       titulo_html: "Seu catálogo de games"
       add_html: "Adicione ao carrinho"
 
+en:
   carrinhos:
     carrinho:
       titulo: 'Seu carrinho'
       esvazie: 'Esvazie seu carrinho'
       finalizar: 'Finalize seu pedido'
 
+en:
   number:
     currency:
      format:
@@ -58,6 +61,7 @@ en:
        delimiter: ","
        format: "%u%n"
 
+en:
   pedidos:
     new:
       legend:                "Por favor, entre seus detalhes"
@@ -69,4 +73,5 @@ en:
       pagamento_prompt_html: "Selecione o meio de pagamento"
       submit:                "Realizar Pedido"
 
+en:
   obrigado: 'Obrigado pelo seu pedido'

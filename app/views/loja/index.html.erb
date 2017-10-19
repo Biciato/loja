@@ -11,8 +11,7 @@
         <div class="preco_line">
           <span class="preco"><%= number_to_currency_br(produto.preco) %></span>
           <%= button_to t('.add_html'),
-            linha_items_path(produto_id: produto, locale: I18n.locale),
-            remote: true %>
+            linha_items_path(produto_id: produto, locale: I18n.locale) %>
         </div>
       </div>
     <% end %>

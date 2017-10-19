@@ -1,0 +1,9 @@
+/* line 6, /Users/leandrobiciato/Desktop/Ruby/loja/app/assets/stylesheets/carrinhos.scss */
+.carrinhos .preco_item, .carrinhos total_linha, #side #carrinho .preco_item, #side #carrinho total_linha {
+  text-align: right;
+}
+/* line 10, /Users/leandrobiciato/Desktop/Ruby/loja/app/assets/stylesheets/carrinhos.scss */
+.carrinhos .total_linha .total_celula, #side #carrinho .total_linha .total_celula {
+  font-weight: bold;
+  border-top: 1px solid red;
+}

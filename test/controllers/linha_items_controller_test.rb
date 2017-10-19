@@ -55,7 +55,7 @@ class LinhaItemsControllerTest < ActionDispatch::IntegrationTest
        xhr: true
     end
     assert_response :success
-    assert_select_jquery :html, '#cart' do
+    assert_select_jquery :html, '#carrinho' do
       assert_select 'tr#corrente_item td', /Programming Ruby 1.9/
      end
   end
