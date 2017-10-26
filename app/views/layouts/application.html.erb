@@ -19,7 +19,7 @@
           <li><%= link_to "Novidades" %></li>
           <li><%= link_to "Sobre" %></li>
         </ul>
-        <%= link_to image_tag("logo.jpg", size: "180x150"), loja_index_path %>
+        <%= link_to image_tag("logo.jpg", size: "180x170"), loja_index_path %>
       </div>
       <div id="linha2">
         <%= form_tag("/search", method: "get") do %>
@@ -28,16 +28,196 @@
         <% end %>
         <ul>
           <li><%= link_to "Minha conta", login_path %></li>
-          <li><%= link_to image_tag("carrinho.jpg", size: "59x43") %></li>
+          <li><%= link_to image_tag("carrinho.jpg", size: "59x43"), carrinhos_path %></li>
         </ul>
       </div>
-      <div id="navbar">
-
+      <div id="linha3">
+        <ul>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">PS4</a>
+            <div class="dropdown-content">
+              <h4>PS4 Games</h4>
+              <a href="">Todos Jogos</a>
+              <a href="">Ação</a>
+              <a href="">Luta</a>
+              <a href="">Dança</a>
+              <a href="">RPG</a>
+              <a href="">Tiro</a>
+              <a href="">Simulação</a>
+              <a href="">Estratégia</a>
+              <a href="">Esportes</a>
+              <h4>PS4 console</h4>
+              <a href="">Consoles</a>
+              <h4>PS4 acessórios</h4>
+              <a href="">Todos acessórios</a>
+              <a href="">Controles</a>
+              <a href="">Cabos e adaptadores</a>
+              <a href="">Baterias e carregadores</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Xbox One</a>
+              <div class="dropdown-content">
+                <h4>Xbox One Games</h4>
+                <a href="">Todos Jogos</a>
+                <a href="">Ação</a>
+                <a href="">Luta</a>
+                <a href="">Jogos Kinect</a>
+                <a href="">Dança</a>
+                <a href="">RPG</a>
+                <a href="">Tiro</a>
+                <a href="">Simulação</a>
+                <a href="">Estratégia</a>
+                <a href="">Esportes</a>
+                <h4>Xbox One console</h4>
+                <a href="">Consoles</a>
+                <h4>Xbox One acessórios</h4>
+                <a href="">Todos acessórios</a>
+                <a href="">Controles</a>
+                <a href="">Cabos e adaptadores</a>
+                <a href="">Baterias e carregadores</a>
+              </div>
+          </li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Switch</a>
+              <div class="dropdown-content">
+                <h4>Switch One Games</h4>
+                <a href="">Todos Jogos</a>
+                <a href="">Ação</a>
+                <a href="">Luta</a>
+                <a href="">Dança</a>
+                <a href="">RPG</a>
+                <a href="">Tiro</a>
+                <a href="">Simulação</a>
+                <a href="">Estratégia</a>
+                <a href="">Esportes</a>
+                <h4>Switch console</h4>
+                <a href="">Consoles</a>
+                <h4>Switch acessórios</h4>
+                <a href="">Todos acessórios</a>
+                <a href="">Controles</a>
+                <a href="">Cabos e adaptadores</a>
+                <a href="">Baterias e carregadores</a>
+              </div>
+          </li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">PS3</a>
+              <div class="dropdown-content">
+                <h4>PS3 Games</h4>
+                <a href="">Todos Jogos</a>
+                <a href="">Ação</a>
+                <a href="">Luta</a>
+                <a href="">Dança</a>
+                <a href="">RPG</a>
+                <a href="">Tiro</a>
+                <a href="">Simulação</a>
+                <a href="">Estratégia</a>
+                <a href="">Esportes</a>
+                <h4>PS3 console</h4>
+                <a href="">Consoles</a>
+                <h4>PS3 acessórios</h4>
+                <a href="">Todos acessórios</a>
+                <a href="">Controles</a>
+                <a href="">Cabos e adaptadores</a>
+                <a href="">Baterias e carregadores</a>
+              </div>
+          </li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Xbox 360</a>
+              <div class="dropdown-content">
+                <h4>Xbox 360 Games</h4>
+                <a href="">Todos Jogos</a>
+                <a href="">Ação</a>
+                <a href="">Luta</a>
+                <a href="">Jogos Kinect</a>
+                <a href="">Dança</a>
+                <a href="">RPG</a>
+                <a href="">Tiro</a>
+                <a href="">Simulação</a>
+                <a href="">Estratégia</a>
+                <a href="">Esportes</a>
+                <h4>Xbox 360 console</h4>
+                <a href="">Consoles</a>
+                <h4>Xbox 360 acessórios</h4>
+                <a href="">Todos acessórios</a>
+                <a href="">Controles</a>
+                <a href="">Cabos e adaptadores</a>
+                <a href="">Baterias e carregadores</a>
+              </div>
+          </li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Wii U</a>
+              <div class="dropdown-content">
+                <h4>Wii U Games</h4>
+                <a href="">Todos Jogos</a>
+                <a href="">Ação</a>
+                <a href="">Luta</a>
+                <a href="">Dança</a>
+                <a href="">RPG</a>
+                <a href="">Tiro</a>
+                <a href="">Simulação</a>
+                <a href="">Estratégia</a>
+                <a href="">Esportes</a>
+                <h4>Wii U console</h4>
+                <a href="">Consoles</a>
+                <h4>Wii U acessórios</h4>
+                <a href="">Todos acessórios</a>
+                <a href="">Controles</a>
+                <a href="">Cabos e adaptadores</a>
+                <a href="">Baterias e carregadores</a>
+              </div>
+          </li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">PC</a>
+              <div class="dropdown-content">
+                <h4>PC Games</h4>
+                <a href="">Todos Jogos</a>
+                <a href="">Ação</a>
+                <a href="">Luta</a>
+                <a href="">Dança</a>
+                <a href="">RPG</a>
+                <a href="">Tiro</a>
+                <a href="">Simulação</a>
+                <a href="">Estratégia</a>
+                <a href="">Esportes</a>
+                <h4>PC console</h4>
+                <a href="">Consoles</a>
+                <h4>PC acessórios</h4>
+                <a href="">Todos acessórios</a>
+                <a href="">Controles</a>
+                <a href="">Cabos e adaptadores</a>
+                <a href="">Baterias e carregadores</a>
+              </div>
+          </li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">3DS</a>
+              <div class="dropdown-content">
+                <h4>3DS Games</h4>
+                <a href="">Todos Jogos</a>
+                <a href="">Ação</a>
+                <a href="">Luta</a>
+                <a href="">Dança</a>
+                <a href="">RPG</a>
+                <a href="">Tiro</a>
+                <a href="">Simulação</a>
+                <a href="">Estratégia</a>
+                <a href="">Esportes</a>
+                <h4>3DS console</h4>
+                <a href="">Consoles</a>
+                <h4>3DS acessórios</h4>
+                <a href="">Todos acessórios</a>
+                <a href="">Controles</a>
+                <a href="">Cabos e adaptadores</a>
+                <a href="">Baterias e carregadores</a>
+              </div>
+          </li>
+        </ul>
       </div>
 
-    <!-- <div id="main"> -->
-      <!-- <%= yield %> -->
-    <!-- </div> -->
+
+
+      <%= yield %>
+
     <!-- <div id="menu-down"> -->
       <!-- <%= link_to image_tag("logo.jpg"), loja_index_path %> -->
       <!-- <p>Central de Atendimento</p> -->
