@@ -1,0 +1,20 @@
+
+
+$(function () {
+	var counter = 2;
+	$("#2, #3, #4").hide();
+	setInterval(mudaImg, 5000);
+
+	function mudaImg() {
+
+		$("#".concat(counter)).show();
+
+		counter++;
+		
+		if (counter == 6) {
+			$("#2, #3, #4").hide();
+			counter = 2;
+		}
+
+	}
+});

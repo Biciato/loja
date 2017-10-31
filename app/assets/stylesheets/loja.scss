@@ -1,3 +1,45 @@
 // Place all the styles related to the Loja controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#banner #banner_img {
+	width: 900px;
+	height: 300px;
+	border: solid 3px #333;
+}
+
+#banner a {
+	border: solid 1px #333;
+	background-color: #F7F7F7;
+	padding: 5px;
+	text-decoration: none;
+	color: #000;
+}
+
+	#banner a:hover {
+		border: solid 1px #333;
+		text-decoration: underline;
+		background-color: #333;
+		color: #FFF;
+	}
+
+	#banner a.hover {
+		background-color: #333;
+		color: #FFF;
+	}
+
+#banner_img li {
+  display: inline;
+  float: left;
+  position: absolute;
+
+}
+
+#banner #botoes {
+	width: 900px;
+	text-align: right;
+}
+
+#banner #botoes {
+	padding-top: 5px;
+}
