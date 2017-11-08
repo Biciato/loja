@@ -2,19 +2,27 @@
 
 $(function () {
 	var counter = 2;
-	$("#2, #3, #4").hide();
+	$(".2, .3, .4").hide();
 	setInterval(mudaImg, 5000);
 
 	function mudaImg() {
 
-		$("#".concat(counter)).show();
+		$(".".concat(counter)).show();
 
 		counter++;
-		
+
 		if (counter == 6) {
-			$("#2, #3, #4").hide();
+			$(".2, .3, .4").hide();
 			counter = 2;
 		}
 
 	}
+
+	$("button").click(function() {
+
+		$(".1, .2, .3, .4").hide();
+		var e = $(this).attr("data");
+		$(".".concat(e)).show();
+	});
+
 });
