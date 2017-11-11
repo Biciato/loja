@@ -2,44 +2,52 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#banner #banner_img {
-	width: 900px;
-	height: 300px;
-	border: solid 3px #333;
-}
+#banner {
+	position: relative;
+	width: 920px;
+	height: 350px;
+	left: 190px;
 
-#banner a {
-	border: solid 1px #333;
-	background-color: #F7F7F7;
-	padding: 5px;
-	text-decoration: none;
-	color: #000;
-}
+	#banner_img {
+		position: absolute;
 
-	#banner a:hover {
-		border: solid 1px #333;
-		text-decoration: underline;
-		background-color: #333;
-		color: #FFF;
+		ul {
+			display: inline;
+
+			li {
+				float: left;
+				position: absolute;
+				overflow: auto;
+			}
+		}
 	}
 
-	#banner a.hover {
-		background-color: #333;
-		color: #FFF;
+	#botoes {
+		position: absolute;
+		left: 240px;
+		overflow: auto;
+		clear: left;
+		top: 320px;
+
+		button {
+			width: 100px;
+			overflow: auto;
+			background: gold;
+		}
+
+		button[data="1"] {
+			background: silver;
+		}
 	}
-
-#banner_img li {
-  display: inline;
-  float: left;
-  position: absolute;
-
 }
 
-#banner #botoes {
-	width: 900px;
-	text-align: right;
-}
-
-#banner #botoes {
-	padding-top: 5px;
+h1 {
+	margin-left: 180px;
+	margin-right: 150px;
+	padding: 10px 0px 10px 330px;
+	border-bottom: 1px solid goldenrod;
+	font-family: helvetica;
+	font-style: normal;
+	font-weight: lighter;
+	color: goldenrod;
 }

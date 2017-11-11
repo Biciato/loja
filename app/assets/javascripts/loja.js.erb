@@ -7,15 +7,15 @@ $(function () {
 
 	function mudaImg() {
 
-		$(".".concat(counter)).show();
-
-		counter++;
-
-		if (counter == 6) {
-			$(".2, .3, .4").hide();
-			counter = 2;
+		if (counter == 5) {
+			$("1, .2, .3, .4").hide();
+			counter = 1;
+		} else {	
+			$(".".concat(counter)).show();
+			$('button').css('background', 'gold');
+			$("button[data=\"".concat(counter, "\"]")).css('background', 'silver');
+			counter++;
 		}
-
 	}
 
 	$("button").click(function() {
@@ -23,6 +23,10 @@ $(function () {
 		$(".1, .2, .3, .4").hide();
 		var e = $(this).attr("data");
 		$(".".concat(e)).show();
+		$('button').css('background', 'gold');
+		$(this).css('background', 'silver');
+		counter = e;
+
 	});
 
 });
