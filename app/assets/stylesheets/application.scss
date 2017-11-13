@@ -200,7 +200,7 @@ body {
     border: 1px solid white;
     background: goldenrod;
     position: relative;
-    height: 300px;
+    height: 250px;
     width: 940px;
     margin: 10px 0px 0px 180px;
 
@@ -213,17 +213,22 @@ body {
       position: absolute;
       left: 180px;
 
+      a {
+        text-decoration: none;
+      }
+
       dt {
         font-size: 15px;
         margin-bottom: 5px;
         border-bottom: 1px solid black;
+      }
 
-        dd {
-          margin-left: 0px;
-          display: block;
-        }
+      dd {
+        margin-left: 0px;
+        display: block;
       }
     }
+
     #d2 {
       position: absolute;
       left: 420px;
@@ -232,6 +237,11 @@ body {
         font-size: 15px;
         margin-bottom: 5px;
         border-bottom: 1px solid black;
+      }
+
+      dd {
+        margin-left: 0px;
+        display: block;
       }
     }
     #d3 {
@@ -246,6 +256,17 @@ body {
     }
     p {
       clear: both;
+      position: absolute;
+      font-size: 13px;
+      top: 140px;
+    }
+
+    telephone {
+      clear: both;
+      position: absolute;
+      font-size: 30px;
+      top: 180px;
+      left: 3px;
     }
 
 }
