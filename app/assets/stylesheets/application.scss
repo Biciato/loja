@@ -14,8 +14,6 @@
  *= require_self
  */
 
-@import 'slick';
-
 body {
   background-color: black;
   font-family: helvetica;
@@ -24,27 +22,21 @@ body {
   margin: 0px;
 }
 
-
-
 #linha1 {
-
   border: none;
   width: 920px;
   height: 70px;
   margin-left: 190px;
   margin-top: 0px;
   padding: 0;
-
 }
 
 #linha2 {
-
   border: 0px;
   width: 840px;
   height: 40px;
   margin: 10px 0px 0px 190px;
   padding: 2px;
-
 }
 
 #linha1 img {
@@ -66,33 +58,20 @@ body {
   float: left;
   width: 510px;
 
-}
+  li {
+    display: inline;
+    margin: 20px;
+    font-size: 20px;
+    padding: 20px;
+  }
 
-#linha1 ul li {
-  display: inline;
-  margin: 20px;
-  font-size: 20px;
-  padding: 20px;
-}
-
-#linha1 ul a {
-  text-decoration: none;
-  color: gold;
-}
-
-#linha2 li {
-
-  float: right;
-  border-right:1px solid black;
-  padding: 0;
-  margin: 0;
-  width: 59px;
-  height: 40px;
-
+  a {
+    text-decoration: none;
+    color: gold;
+  }
 }
 
 #linha2 ul {
-
     width: 120px;
     height: 40px;
     list-style-type: none;
@@ -102,28 +81,32 @@ body {
     background-color: goldenrod;
     border-bottom: 1px solid goldenrod;
 
-}
+    li {
+      float: right;
+      border-right:1px solid black;
+      padding: 0;
+      margin: 0;
+      width: 59px;
+      height: 40px;
 
-#linha2 li a {
+      img {align-self: auto;}
+    }
 
-  display: block;
-  color: black;
-  text-align: center;
-  vertical-align: middle;
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  height: 40px;
-  width: 59px;
-
+    a {
+      display: block;
+      color: black;
+      text-align: center;
+      vertical-align: middle;
+      padding: 0;
+      margin: 0;
+      text-decoration: none;
+      height: 40px;
+      width: 59px;
+    }
 }
 
 #linha2 a:hover {
   background-color: goldenrod;
-}
-
-#linha2 li a img {
-  align-self: auto;
 }
 
 #linha2 form {
@@ -159,8 +142,6 @@ body {
 
 #linha3 {
 
-
-
   ul {
     list-style-type: none;
     margin: 10px 302px 10px 192px;
@@ -185,13 +166,9 @@ body {
   }
 }
 
-#linha3 li a:hover, .dropdown:hover .dropbtn {
-    background-color: silver;
-}
+#linha3 li a:hover, .dropdown:hover .dropbtn {background-color: silver;}
 
-#linha3 li.dropdown {
-    display: inline-block;
-}
+#linha3 li.dropdown {display: inline-block;}
 
 #linha3 .dropdown-content {
     display: none;
@@ -215,8 +192,60 @@ body {
     font-size: 10px;
 }
 
-#linha3 .dropdown-content a:hover {background-color: silver}
+#linha3 .dropdown-content a:hover {background-color: silver;}
 
-#linha3 .dropdown:hover .dropdown-content {
-    display: block;
+#linha3 .dropdown:hover .dropdown-content {display: block;}
+
+#menu-down {
+    border: 1px solid white;
+    background: goldenrod;
+    position: relative;
+    height: 300px;
+    width: 940px;
+    margin: 10px 0px 0px 180px;
+
+    img {
+      border: 3px outset goldenrod;
+      float: left;
+    }
+
+    #d1 {
+      position: absolute;
+      left: 180px;
+
+      dt {
+        font-size: 15px;
+        margin-bottom: 5px;
+        border-bottom: 1px solid black;
+
+        dd {
+          margin-left: 0px;
+          display: block;
+        }
+      }
+    }
+    #d2 {
+      position: absolute;
+      left: 420px;
+
+      dt {
+        font-size: 15px;
+        margin-bottom: 5px;
+        border-bottom: 1px solid black;
+      }
+    }
+    #d3 {
+      position: absolute;
+      left: 700px;
+
+      dt {
+        font-size: 15px;
+        margin-bottom: 5px;
+        border-bottom: 1px solid black;
+      }
+    }
+    p {
+      clear: both;
+    }
+
 }

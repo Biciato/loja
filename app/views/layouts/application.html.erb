@@ -215,40 +215,43 @@
       </div>
 
 
+      <div>
+        <%= yield %>
+      </div>
 
-      <%= yield %>
-
-    <!-- <div id="menu-down"> -->
-      <!-- <%= link_to image_tag("logo.jpg"), loja_index_path %> -->
-      <!-- <p>Central de Atendimento</p> -->
-      <!-- <telephone>19-XXXX-XXXX</telephone>
-      <dl>
-        <dt>Tire suas dúvidas</dt>
-        <dd><%= link_to "Quem somos" %></dd>
-        <dd><%= link_to "Termos de Uso" %></dd>
-        <dd><%= link_to "Política de privacidade" %></dd>
-        <dd><%= link_to "FAQ" %></dd>
-        <dd><%= link_to "Trabalhe conosco" %></dd>
-        <dd><%= link_to "Política de Trocas e devoluções" %></dd>
-      </dl>
-      <dl>
-        <dt>Formas de pagamento</dt>
-        <dd>
-          <%= image_tag "ae.jpg" %>
-          <%=  image_tag "boleto.jpg" %>
-          <%=  image_tag "hyper.jpg" %>
-        </dd>
-        <dd>
-          <%= image_tag "itau.jpg" %>
-          <%= image_tag "mastercard.jpg" %>
-          <%= image_tag "visa.jpg" %>
-        </dd>
-      </dl>
-      <dt>Redes Sociais</dt>
-        <a href="http://www.facebook.com.br"><%= image_tag "facebook.jpg", size: "40x40" %></a>
-        <a href="http://www.google.com.br"><%= image_tag "google.jpg", size: "40x40" %></a>
-        <a href="http://www.twitter.com.br"><%= image_tag "twitter.jpg", size: "40x40" %></a>
-        <a href="http://www.youtube.com.br"><%= image_tag "youtube.jpg", size: "40x40" %></a>
-      </dt> -->
+      <div id="menu-down">
+        <%= link_to image_tag("logo.jpg"), loja_index_path %>
+        <dl id="d1">
+          <dt>Tire suas dúvidas</dt>
+          <dd><%= link_to "Quem somos" %></dd>
+          <dd><%= link_to "Termos de Uso" %></dd>
+          <dd><%= link_to "Política de privacidade" %></dd>
+          <dd><%= link_to "FAQ" %></dd>
+          <dd><%= link_to "Trabalhe conosco" %></dd>
+          <dd><%= link_to "Política de Trocas e devoluções" %></dd>
+        </dl>
+        <dl id="d2">
+          <dt>Formas de pagamento</dt>
+          <dd>
+            <%= image_tag "ae.jpg" %>
+            <%=  image_tag "boleto.jpg" %>
+            <%=  image_tag "hyper.jpg" %>
+          </dd>
+          <dd>
+            <%= image_tag "itau.jpg" %>
+            <%= image_tag "mastercard.jpg" %>
+            <%= image_tag "visa.jpg" %>
+          </dd>
+        </dl>
+        <dl id="d3">
+          <dt>Redes Sociais</dt>
+          <a href="http://www.facebook.com.br"><%= image_tag "facebook.jpg", size: "40x40" %></a>
+          <a href="http://www.google.com.br"><%= image_tag "google.jpg", size: "40x40" %></a>
+          <a href="http://www.twitter.com.br"><%= image_tag "twitter.jpg", size: "40x40" %></a>
+          <a href="http://www.youtube.com.br"><%= image_tag "youtube.jpg", size: "40x40" %></a>
+        </dl>
+        <p>Central de Atendimento</p>
+        <telephone>19-XXXX-XXXX</telephone>
+      </div>
     </body>
 </html>
