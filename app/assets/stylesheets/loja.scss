@@ -4,9 +4,9 @@
 
 #banner {
 	position: relative;
-	width: 920px;
-	height: 350px;
-	left: 190px;
+	width: 73.5em;
+	height: 28.0em;
+	margin: 0.5em 0em 0em 21.5em;
 
 	#banner_img {
 		position: absolute;
@@ -24,15 +24,17 @@
 
 	#botoes {
 		position: absolute;
-		left: 240px;
+		left: 20.0em;
 		overflow: auto;
 		clear: left;
-		top: 320px;
+		top: 25.0em;
 
 		button {
-			width: 100px;
+			width: 7.5em;
+			height: 1em;
 			overflow: auto;
-			background: gold;
+			background: goldenrod;
+			border: none;
 		}
 
 		button[data="1"] {
@@ -42,10 +44,10 @@
 }
 
 h1 {
-	margin-left: 180px;
-	margin-right: 160px;
-	padding: 10px 0px 10px 330px;
-	border-bottom: 1px solid goldenrod;
+	margin-left: 10.7em;
+	margin-right: 13.3em;
+	padding: 0.2em 0em 0.4em 12.0em;
+	border-bottom: 0.2em solid goldenrod;
 	font-family: helvetica;
 	font-style: normal;
 	font-weight: lighter;

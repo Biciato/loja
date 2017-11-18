@@ -14,229 +14,249 @@
  *= require_self
  */
 
-body {
-  background-color: black;
-  font-family: helvetica;
-  margin: 0px;
-  border: 0px;
-  margin: 0px;
-}
-
-#linha1 {
-  border: none;
-  width: 920px;
-  height: 70px;
-  margin-left: 190px;
-  margin-top: 0px;
+body, body > p, body > ol, body > ul, body > td {
+  margin: 0em !important;
   padding: 0;
+  background: black;
 }
 
-#linha2 {
-  border: 0px;
-  width: 840px;
-  height: 40px;
-  margin: 10px 0px 0px 190px;
-  padding: 2px;
-}
-
-#linha1 img {
-  border: none;
-  margin: 0;
-  overflow: visible;
-  float: right;
-  border: 4px outset goldenrod;
-}
-
-#linha1 img[alt="Fifa18"] {
-  float: left;
-  border: none;
-}
-
-#linha1 ul {
-  text-align: center;
-  padding-top: 20px;
-  float: left;
-  width: 510px;
-
-  li {
-    display: inline;
-    margin: 20px;
-    font-size: 20px;
-    padding: 20px;
-  }
-
-  a {
-    text-decoration: none;
-    color: gold;
-  }
-}
-
-#linha2 ul {
-    width: 120px;
-    height: 40px;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: goldenrod;
-    border-bottom: 1px solid goldenrod;
-
-    li {
-      float: right;
-      border-right:1px solid black;
-      padding: 0;
-      margin: 0;
-      width: 59px;
-      height: 40px;
-
-      img {align-self: auto;}
-    }
-
-    a {
-      display: block;
-      color: black;
-      text-align: center;
-      vertical-align: middle;
-      padding: 0;
-      margin: 0;
-      text-decoration: none;
-      height: 40px;
-      width: 59px;
-    }
-}
-
-#linha2 a:hover {
-  background-color: goldenrod;
-}
-
-#linha2 form {
-  float: left;
-  width: 610px;
-  height: 40px;
-}
-
-#linha2 input[type="text"] {
+#menu-top {
   position: relative;
-  width: 500px;
-  height: 40px;
-  margin: 0px;
-  padding: 0px;
-  border: 1px solid goldenrod;
-  background-color: black;
-  color: white;
-  font-size: 15px;
-}
-
-#linha2 input[type="submit"] {
-  position: absolute;
-  font-family: Helvetica;
-  font-size: 20px;
-  width: 80px;
-  height: 42px;
-  margin: 0px;
-  padding: 0;
-  color: black;
   background: goldenrod;
-  border: 1px solid goldenrod;
-}
+  width: 73.2em;
+  height: 15.5em;
+  left: 21.5em;
+  
+  img {
+      border: none;
+      margin: 0;
+      overflow: visible;
+      float: right;
+      border: 0.4em outset goldenrod;
+    }
 
-#linha3 {
-
-  ul {
-    list-style-type: none;
-    margin: 10px 302px 10px 192px;
-    padding: 0;
-    width: 606px;
-    overflow: hidden;
-    background-color: goldenrod;
-
-    li {
+  #linha1 {
+    height: 5.0em;
+    width: 58.4em;
+    
+    img {
       float: left;
-      border-right: 1px solid black;
-
-      a, .dropbtn {
+      border: none;
+    }
+    
+    ul {
+      text-align: center;
+      padding: 0;
+      margin: 0;
+      width: 47.5em;
+      height: 5.0em;
+      border: none;
+      display: inline-block;
+  
+      li {
         display: inline-block;
-        color: black;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 15px;
+        margin: 0.5em;
+        padding: 0.5em;
+        font-size: 1.5em;
+        padding: 0.5em;
+        width: 5.0em;
+        height: 1.4em;
+      
+        a {
+          text-decoration: none;
+          color: gold;
+        }
       }
     }
   }
-}
-
-#linha3 li a:hover, .dropdown:hover .dropbtn {background-color: silver;}
-
-#linha3 li.dropdown {display: inline-block;}
-
-#linha3 .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: silver;
-    min-width: 160px;
-    z-index: 1;
-
-    h4 {
-      margin: 10px;
+  
+  #linha2 {
+    height: 5.0em;
+    width: 58.4em;
+   
+    form {
+      display: inline-block;
+      float: left;
+      margin: 0.5em 0;
+      border: none;
+      padding: 0em;
+      width: 43.0em;
+      height: 4.0em;
+      
+     input[type="text"] {
+        float: left;
+        margin-left: 0.5em;
+        padding: 0.5em;
+        height: 3.0em;
+        width: 35.0em;
+        background-color: black;
+        color: white;
+        font-size: 1.0em;
+        border: none;
+      }
+  
+      input[type="submit"] {
+        float: left;
+        font-family: Helvetica;
+        font-size: 1.0em;
+        margin: 0em;
+        padding: 0.5em;
+        width: 6.0em;
+        height: 4.0em;
+        color: black;
+        background: gold;
+        border: none;
+      }
     }
-}
 
-#linha3 .dropdown-content a {
-    color: black;
-    padding: 0;
-    margin: 0 0 0 10px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-    font-size: 10px;
-}
-
-#linha3 .dropdown-content a:hover {background-color: silver;}
-
-#linha3 .dropdown:hover .dropdown-content {display: block;}
+    ul {
+      float: left;
+      display: inline-block;
+      list-style-type: none;
+      width: 9.2em;
+      height: 4.0em;
+      margin: 0.5em 0;
+      padding: 0;
+      background-color: gold;
+      
+      li {
+        display: inline-block;
+        width: 4.5em;
+        height: 4.0em;
+        padding: 0;
+        margin: 0;
+        float: left;
+      }
+      
+      li:first-child {
+        border-right: 1px solid black;
+      }
+    }
+    
+    a {
+      color: black;
+      text-decoration: none;
+      font-size: 1.0em;
+      padding: 0em;
+      margin: 0;
+      float: right;
+      height: 4.0em;
+      text-align: center;
+      line-height: 1.8em;
+      
+      img {align-self: auto;}
+    }
+      
+    a:hover {
+      color: gold;
+      background: black;
+    }
+  }
+  
+  #linha3 {
+    border: 1px solid blue;
+    height: 5.0em;
+    width: 58.4em;
+  
+    ul {
+      
+      list-style-type: none;
+     // margin: 1.0em 30.2em 1.0em 19.2em;
+      padding: 0;
+      //width: 42.82em;
+      overflow: hidden;
+      background-color: goldenrod;
+  
+      li {
+        float: left;
+        border-right: 0.1em solid black;
+  
+        a, .dropbtn {
+          display: inline-block;
+          color: black;
+          text-align: center;
+          //padding: 1.0em 1.2em;
+          text-decoration: none;
+          font-size: 1.0em;
+        }
+      }
+    }
+  }
+  
+  #linha3 li a:hover, .dropdown:hover .dropbtn {background-color: silver;}
+  
+  #linha3 li.dropdown {display: inline-block;}
+  
+  #linha3 .dropdown-content {
+      display: none;
+      //position: absolute;
+      background-color: silver;
+      //min-width: 16.0em;
+      z-index: 1;
+  
+      h4 {
+        margin: 1.0em;
+      }
+  }
+  
+  #linha3 .dropdown-content a {
+      color: black;
+      padding: 0;
+      margin: 0 0 0 1.0em;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+      font-size: 1.0em;
+  }
+  
+  #linha3 .dropdown-content a:hover {background-color: silver;}
+  
+  #linha3 .dropdown:hover .dropdown-content {display: block;}
+}  
 
 #menu-down {
-    border: 1px solid white;
+    border: 0.5px solid goldenrod;
     background: goldenrod;
     position: relative;
-    height: 250px;
-    width: 940px;
-    margin: 10px 0px 0px 180px;
+    height: 18.0em;
+    width: 73.5em;
+    margin: 0.5em 0em 0em 21.5em;
 
     img {
-      border: 3px outset goldenrod;
+      border: 0.2em outset goldenrod;
       float: left;
     }
 
     #d1 {
       position: absolute;
-      left: 180px;
+      left: 17.0em;
 
       a {
         text-decoration: none;
       }
 
       dt {
-        font-size: 15px;
-        margin-bottom: 5px;
-        border-bottom: 1px solid black;
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-bottom: 0.4em;
+        border-bottom: 0.2em solid black;
       }
 
       dd {
-        margin-left: 0px;
+        margin-left: 0;
         display: block;
       }
     }
 
     #d2 {
       position: absolute;
-      left: 420px;
+      left: 37.0em;
 
       dt {
-        font-size: 15px;
-        margin-bottom: 5px;
-        border-bottom: 1px solid black;
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-bottom: 0.4em;
+        border-bottom: 0.2em solid black;
       }
 
       dd {
@@ -246,12 +266,13 @@ body {
     }
     #d3 {
       position: absolute;
-      left: 700px;
+      left: 55.0em;
 
       dt {
-        font-size: 15px;
-        margin-bottom: 5px;
-        border-bottom: 1px solid black;
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-bottom: 0.4em;
+        border-bottom: 0.2em solid black;
       }
     }
     p {

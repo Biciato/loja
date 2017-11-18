@@ -3,6 +3,7 @@
   <head>
     <title>FG Games</title>
     <%= csrf_meta_tags %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <%= stylesheet_link_tag 'application', media: 'all',
      'data-turbolinks-track': 'reload' %>
@@ -11,15 +12,15 @@
   </head>
 
   <body class="<%= controller.controller_name %>">
-
+    <div id="menu-top">
+      <%= link_to image_tag("logo.jpg", size: "180x190"), loja_index_path %>
       <div id="linha1">
-        <%= image_tag('fifa18.jpg', size: "120x70") %>
+        <%= image_tag('fifa18.jpg', size: "140x65") %>
         <ul>
           <li><%= link_to "Home", loja_index_path %></li>
           <li><%= link_to "Novidades" %></li>
           <li><%= link_to "Sobre" %></li>
         </ul>
-        <%= link_to image_tag("logo.jpg", size: "180x170"), loja_index_path %>
       </div>
       <div id="linha2">
         <%= form_tag("/search", method: "get") do %>
@@ -28,8 +29,9 @@
         <% end %>
         <ul>
           <li><%= link_to "Minha conta", login_path %></li>
-          <li><%= link_to image_tag("carrinho.jpg", size: "59x43"), carrinhos_path %></li>
+          <li><%= link_to "Criar conta" , login_path %></li>
         </ul>
+        <%= link_to image_tag("carrinho.jpg", size: "59x43"), carrinhos_path %>
       </div>
       <div id="linha3">
         <ul>
@@ -213,7 +215,7 @@
           </li>
         </ul>
       </div>
-
+    </div>
 
       <div>
         <%= yield %>
