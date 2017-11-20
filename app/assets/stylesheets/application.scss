@@ -14,7 +14,7 @@
  *= require_self
  */
 
-body, body > p, body > ol, body > ul, body > td {
+body, body > p, body > ol, body > ul {
   margin: 0em !important;
   padding: 0;
   background: black;
@@ -24,7 +24,7 @@ body, body > p, body > ol, body > ul, body > td {
   position: relative;
   background: goldenrod;
   width: 73.2em;
-  height: 15.5em;
+  height: 15.1em;
   left: 21.5em;
 
   img {
@@ -32,7 +32,7 @@ body, body > p, body > ol, body > ul, body > td {
       margin: 0;
       overflow: visible;
       float: right;
-      border: 0.4em outset goldenrod;
+      border: 0.4em outset gold;
     }
 
   #linha1 {
@@ -48,7 +48,7 @@ body, body > p, body > ol, body > ul, body > td {
       text-align: center;
       padding: 0;
       margin: 0;
-      width: 47.5em;
+      width: 45.5em;
       height: 5.0em;
       border: none;
       display: inline-block;
@@ -141,13 +141,11 @@ body, body > p, body > ol, body > ul, body > td {
           color: black;
           text-decoration: none;
           font-size: 1.0em;
-          padding: 0em;
-          margin-top: 0;
-          float: right;
-          height: 4.0em;
+          height: inherit;
           width: inherit;
           text-align: center;
-          line-height: 1.8em;
+          display: table-cell;
+          vertical-align: middle;
         }
       }
 
@@ -165,30 +163,37 @@ body, body > p, body > ol, body > ul, body > td {
 
 
   #linha3 {
-    border: 1px solid blue;
+    border: 0.1em solid black;
+    background: black;
     height: 5.0em;
     width: 58.4em;
 
     ul {
-
       list-style-type: none;
-     // margin: 1.0em 30.2em 1.0em 19.2em;
+      margin: 0.2em;
       padding: 0;
       //width: 42.82em;
-      overflow: hidden;
+      //overflow: hidden;
       background-color: goldenrod;
 
       li {
         float: left;
         border-right: 0.1em solid black;
+        width: 6.9em;
+        height: 4.7em;
+        margin-top: 0.2em;
+        margin-left: 0.2em;
+        background: goldenrod;
 
         a, .dropbtn {
-          display: inline-block;
           color: black;
+          width: inherit;
+          height: inherit;
           text-align: center;
-          //padding: 1.0em 1.2em;
+          display: table-cell;
+          vertical-align: middle;
           text-decoration: none;
-          font-size: 1.0em;
+          font-size: 1.2em;
         }
       }
     }
@@ -200,9 +205,9 @@ body, body > p, body > ol, body > ul, body > td {
 
   #linha3 .dropdown-content {
       display: none;
-      //position: absolute;
+      position: absolute;
       background-color: silver;
-      //min-width: 16.0em;
+      min-width: 16.0em;
       z-index: 1;
 
       h4 {
@@ -218,6 +223,7 @@ body, body > p, body > ol, body > ul, body > td {
       display: block;
       text-align: left;
       font-size: 1.0em;
+      margin-bottom: 1.0em;
   }
 
   #linha3 .dropdown-content a:hover {background-color: silver;}
@@ -230,11 +236,12 @@ body, body > p, body > ol, body > ul, body > td {
     background: goldenrod;
     position: relative;
     height: 18.0em;
-    width: 73.5em;
-    margin: 0.5em 0em 0em 21.5em;
+    width: 73.2em;
+    margin: 1.5em 0em 0em 21.5em;
+    clear: both;
 
     img {
-      border: 0.2em outset goldenrod;
+      border: 0.2em outset gold;
       float: left;
     }
 
