@@ -23,7 +23,7 @@
 			<%= image_tag(product.image_url, size: "180x230") %>
 			<h3><%= product.titulo %></h3>
 			<div class="price_line">
-				<span class="price"><%= number_to_currency(product.preco, unit: "R$", separator: ",", delimiter: ".") %></span>
+				<span class="price">R$ <%= number_to_currency(product.preco, unit: "", separator: ",", delimiter: ".") %></span>
 			</div>
 		</div>
 	<% end %>
