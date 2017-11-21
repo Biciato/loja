@@ -147,6 +147,10 @@ body, body > p, body > ol, body > ul {
           display: table-cell;
           vertical-align: middle;
         }
+
+        a[href="signup"] {
+          font-weight: bold;
+        }
       }
 
       li:first-child {
@@ -172,8 +176,6 @@ body, body > p, body > ol, body > ul {
       list-style-type: none;
       margin: 0.2em;
       padding: 0;
-      //width: 42.82em;
-      //overflow: hidden;
       background-color: goldenrod;
 
       li {
