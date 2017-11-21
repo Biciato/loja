@@ -5,7 +5,7 @@
 .loja {
 	#banner {
 		position: relative;
-		width: 73.5em;
+		width: 77.0em;
 		height: 28.0em;
 		margin: 0.5em 0em 0em 21.5em;
 
@@ -25,7 +25,7 @@
 
 		#botoes {
 			position: absolute;
-			left: 20.0em;
+			left: 24.0em;
 			overflow: auto;
 			clear: left;
 			top: 25.0em;
@@ -45,12 +45,15 @@
 	}
 
 	h1 {
+		display: inline-block;
+		width: 39.0em;
 		margin-left: 10.7em;
-		padding: 0.2em 0em 0.4em 12.0em;
+		padding: 0.2em 0em 0.4em 0em;
 		border-bottom: 0.2em solid goldenrod;
 		font-family: helvetica;
 		font-style: normal;
 		font-weight: lighter;
+		text-align: center;
 		color: goldenrod;
 	}
 
@@ -58,13 +61,13 @@
 		background: black;
 		left: 21.5em;
 		position: relative;
-		width: 73.2em;
+		width: 78.0em;
 		height: 150.0em;
 		margin-bottom: 0.5em;
 		
 		.entry {
 			display: inline-block;
-			width: 18.1em;
+			width: 19.1em;
 			height: 25.0em;
 			margin: 0.1em;
 			border-radius: 10px;

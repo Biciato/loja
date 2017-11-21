@@ -1,5 +1,3 @@
-
-
 $(function () {
 	var counter = 2;
 	$(".2, .3, .4").hide();
@@ -27,5 +25,9 @@ $(function () {
 		$('button').css('background', 'goldenrod');
 		$(this).css('background', 'silver');
 		counter = e;
+	});
+	
+	$('#index').on("click", ".entry", function() {
+		$(this).find(':a').click();	
 	});
 });

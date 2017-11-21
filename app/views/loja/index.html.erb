@@ -1,10 +1,10 @@
 <div id="banner" class="banner">
 	<div id="banner_img">
     <ul>
-   	  <li class="1"><%= image_tag("ac_carrosel.png", size: "950x300") %></li>
-      <li class="2"><%= image_tag("cdww_carrosel.png", size: "950x300") %></li>
-      <li class="3"><%= image_tag("grantursimo_carrosel.png", size: "950x300") %></li>
-      <li class="4"><%= image_tag("star_wars_carrosel.png", size: "950x300") %></li>
+   	  <li class="1"><%= image_tag("ac_carrosel.png", size: "1000x300") %></li>
+      <li class="2"><%= image_tag("cdww_carrosel.png", size: "1000x300") %></li>
+      <li class="3"><%= image_tag("grantursimo_carrosel.png", size: "1000x300") %></li>
+      <li class="4"><%= image_tag("star_wars_carrosel.png", size: "1000x300") %></li>
     </ul>
   </div>
 	<div id="botoes">
@@ -25,6 +25,7 @@
 			<div class="price_line">
 				<span class="price">R$ <%= number_to_currency(product.preco, unit: "", separator: ",", delimiter: ".") %></span>
 			</div>
+			<%= link_to 'mostrar', product %>
 		</div>
 	<% end %>
 </div>
