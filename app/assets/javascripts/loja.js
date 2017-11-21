@@ -1,4 +1,5 @@
 $(function () {
+	
 	var counter = 2;
 	$(".2, .3, .4").hide();
 	setInterval(mudaImg, 5000);
@@ -18,6 +19,7 @@ $(function () {
 			counter++;
 		}
 	}
+	
 	$("button").click(function() {
 		$(".1, .2, .3, .4").hide();
 		var e = $(this).attr("data");
@@ -25,9 +27,5 @@ $(function () {
 		$('button').css('background', 'goldenrod');
 		$(this).css('background', 'silver');
 		counter = e;
-	});
-	
-	$('#index').on("click", ".entry", function() {
-		$(this).find(':a').click();	
 	});
 });

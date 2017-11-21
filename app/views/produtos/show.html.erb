@@ -6,5 +6,5 @@
   <h3>R$ <%= number_to_currency(@produto.preco, unit: "", separator: ",", delimiter: ".") %></h3>
   <h4>Quantidade</h4>
 
-  <%= button_to 'Comprar', linha_items_path(@produto.id) %>
+  <%= button_to 'Comprar', linha_items_path(produto_id: @produto.id) %>
 </div>

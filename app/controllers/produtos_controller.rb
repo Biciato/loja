@@ -6,6 +6,10 @@ class ProdutosController < ApplicationController
   def index
     @produtos = Produto.all
   end
+  
+  def volta
+    redirect_to root_path
+  end
 
   # GET /produtos/1
   # GET /produtos/1.json
