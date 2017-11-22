@@ -27,21 +27,22 @@ class LinhaItemsController < ApplicationController
   # POST /linha_items
   # POST /linha_items.json
   def create
-    produto = Produto.find(params[:produto_id])
-    @linha_item = @carrinho.adicionar_produto(produto)
+    redirect_to loja_index_url, notice: 'Linha item was successfully updated.'
+    # produto = Produto.find(params[:produto_id])
+    # @linha_item = @carrinho.adicionar_produto(produto)
 
-    respond_to do |format|
-      if @linha_item.save
-        format.html { redirect_to loja_index_url }
-        format.js { @corrente_item = @linha_item }
-        format.json { render :show,
-          status: :created, location: @linha_item }
-      else
-        format.html { render :new }
-        format.json { render json: @linha_item.errors,
-          status: :unprocessable_entity }
-      end
-    end
+    # respond_to do |format|
+      # if @linha_item.save
+        # format.html { redirect_to loja_index_url }
+        # format.js { @corrente_item = @linha_item }
+        # format.json { render :show,
+          # status: :created, location: @linha_item }
+      # else
+        # format.html { render :new }
+        # format.json { render json: @linha_item.errors,
+          # status: :unprocessable_entity }
+      # end
+    # end
   end
 
   # PATCH/PUT /linha_items/1
