@@ -6,26 +6,31 @@
   <%= select_tag("", options_for_select(1..20)) %>
   <%= button_to 'Comprar', linha_items_path(produto_id: @produto.id) %>
 </div>
-<ul>
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Descrição</a>
-      <p>
-        Criado por gamers, testado por renomados pilotos de corrida e a escolha definitiva dos profissionais de e-sports!
-        Project Cars 2 é a nova evolução da premiada série de jogos de corrida, com os carros mais icônicos sob as condições mais emocionantes para garantir a experiência da "Jornada Automobilística Definitiva" e muita adrenalina. Reúne a essência da realidade das pistas no mais atrativo, autêntico e tecnicamente avançado jogo de corrida do planeta.
-        O game tem tudo de carros GT a carros de Turismo, de Protótipos de Endurance a hiper-carros exóticos trazendo todas as variedades do automobilismo com completa liberdade de escolha de o que e onde dirigir. A qualquer hora. Em qualquer lugar! 
-
-        Destaques do Game
-
-        - O auge da autenticidade: Mais de 170 carros licenciados das marcas mais icônicas / A maior variedade de circuitos em jogos de corrida de console / Manuseio do controle aprimorado.
-
-        - O calor da competição: Dispute online com seus amigos em uma grande variedade de veículos, dentro e fora do asfalto / Funcionalidades de e-Sports robustas e campeonatos online totalmente novos.
-        
-        - O poder das condições: Corra em uma grande variedade de superfícies, incluindo gelo, asfalto ou pistas de terra / Com uma física avançada e de acordo com as deformidades das superfícies / Passagem do tempo, condições meteorológicas e sazonais totalmente dinâmicas. 
-      </p>
-  </li>
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Trailer</a>
-    <iframe src="https://www.youtube.com/watch?v=0ETKAYRzvjs"></iframe>
-  </li>
-</ul>
+<div id="desc">
+  <ul>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">Descrição</a>
+      <div class="dc">  
+        <p>
+          Criado por gamers, testado por renomados pilotos de corrida e a escolha definitiva dos profissionais de e-sports!
+          Project Cars 2 é a nova evolução da premiada série de jogos de corrida, com os carros mais icônicos sob as condições mais emocionantes para garantir a experiência da "Jornada Automobilística Definitiva" e muita adrenalina. Reúne a essência da realidade das pistas no mais atrativo, autêntico e tecnicamente avançado jogo de corrida do planeta.
+          O game tem tudo de carros GT a carros de Turismo, de Protótipos de Endurance a hiper-carros exóticos trazendo todas as variedades do automobilismo com completa liberdade de escolha de o que e onde dirigir. A qualquer hora. Em qualquer lugar! 
   
+          Destaques do Game
+  
+          - O auge da autenticidade: Mais de 170 carros licenciados das marcas mais icônicas / A maior variedade de circuitos em jogos de corrida de console / Manuseio do controle aprimorado.
+  
+          - O calor da competição: Dispute online com seus amigos em uma grande variedade de veículos, dentro e fora do asfalto / Funcionalidades de e-Sports robustas e campeonatos online totalmente novos.
+          
+          - O poder das condições: Corra em uma grande variedade de superfícies, incluindo gelo, asfalto ou pistas de terra / Com uma física avançada e de acordo com as deformidades das superfícies / Passagem do tempo, condições meteorológicas e sazonais totalmente dinâmicas. 
+        </p>
+      </div>  
+    </li>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">Trailer</a>
+        <div class="dc">
+          <iframe src="https://www.youtube.com/watch?v=0ETKAYRzvjs"></iframe>
+        </div>  
+    </li>
+  </ul>
+</div> 
