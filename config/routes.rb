@@ -1,16 +1,9 @@
 Rails.application.routes.draw do
-  get 'admin' => 'admin#index'
-
-  controller :sessions do
-    get 'login' => :new
-    post 'login' => :create
-    delete 'logout' => :destroy
-  end
+  
 
   resources :usuarios
-  resources :produtos do
-    get :quem_comprou, on: :member
-  end
+  resources :produtos
+  
 
   resources :pedidos
   resources :linha_items

@@ -1,6 +1,6 @@
 class LinhaItemsController < ApplicationController
   include CarrinhoCorrente
-  skip_before_action :authorize, only: :create
+  # skip_before_action :authorize, only: :create
   before_action :set_carrinho, only: [:create]
   before_action :set_linha_item, only: [:show, :edit, :update, :destroy]
 
