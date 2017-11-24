@@ -1,5 +1,6 @@
 class ProdutosController < ApplicationController
   before_action :set_produto, only: [:show, :edit, :update, :destroy]
+  before_action :allow_iframe_requests
 
   # GET /produtos
   # GET /produtos.json
@@ -90,5 +91,9 @@ class ProdutosController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def produto_params
       params.require(:produto).permit(:titulo, :image_url, :preco)
+    end
+    
+    def allow_iframe_requests
+      response.headers.delete('X-Frame-Options')
     end
 end

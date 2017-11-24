@@ -29,5 +29,8 @@ $(function () {
 		counter = e;
 	});
 
+	$('img').click(function() {
+	  $(this).parent().find('a').click();		
+	});
 	
 });

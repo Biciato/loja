@@ -82,6 +82,19 @@
 			
 			h3 {
 				height: 2.0em;
+				
+				a {
+					text-decoration: none;
+				}
+				
+				a:hover {
+					background: white;
+					color: goldenrod;
+				}
+				
+				a:visited {
+					color: black;
+				}
 			}
 		}
 	}
