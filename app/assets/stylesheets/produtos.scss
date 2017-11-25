@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .produtos {
   background: black;
-  
+
   #modelo {
     position: relative;
     background: white;
@@ -12,52 +12,42 @@
     left: 21.5em;
     top: 2.0em;
     margin-bottom: 4.0em;
-    
-    
+
+
     #img {
       position: relative;
       display: block;
       height: 35.0em;
       width: 77.0em;
-      
+
       img {
         float: left;
-        margin: 2.0em; 
-        
+        margin: 2.0em;
+
       }
-    
+
       h1, h3, h4, form {
         position: relative;
         display: block;
         height: 2.0em;
       }
-      
+
       h1 {
         text-align: left;
-        width: 14.0em;
+        width: 25.0em;
         height: 2.0em;
-        margin: 0em 15.0em 0 16.0em;
+        margin: 0em 15.0em 0em 16.0em;
         top: 2.0em;
         font-size: 2.5em;
         line-height: 1.0;
         font-weight: bold;
+        font-size-adjust: 0.58;
         padding-bottom: 0.5em;
       }
-      
-      hr {
-        border-color: goldenrod;
-        display: inline-block;
-        width: 14.0em;
-        margin-top: 0em;
-        margin-bottom: 0.5em;
-        margin-left: 1.0em;
-        margin-right: 1.0em;
-        border-style: inset;
-        border-width: 0.2em;
-      }
-      
+
       h3 {
         text-align: left;
+        border-top: 0.2em solid goldenrod;
         margin-left: 20.0em;
         padding-top: 0.5em;
         width: 14.0em;
@@ -65,24 +55,24 @@
         font-size: 2.0em;
         font-weight: lighter;
       }
-      
+
       h4 {
         margin-left: 13.0em;
         display: inline;
         width: 58.5em;
         color: gray;
       }
-      
+
       select {
         display: inline;
       }
-      
+
       form {
         margin-top: 0.4em;
         width: 71.0em;
         height: 5.0em;
         margin-left: 40.0em;
-        
+
         input {
           width: 10.5em;
           height: 3.0em;
@@ -91,8 +81,8 @@
           border-radius: 18px;
         }
       }
-    }  
-    
+    }
+
     #desc {
       position: relative;
       width: 77.0em;
@@ -110,11 +100,11 @@
         padding: 1.0em;
         text-align: center;
       }
-      
+
       span:first-child {
         margin-left: 1.0em;
       }
-      
+
       hr {
         border-color: goldenrod;
         display: block;
@@ -125,7 +115,7 @@
         border-style: inset;
         border-width: 0.2em;
       }
-      
+
       p {
         color: black;
         padding: 1.2em 1.6em;
@@ -134,7 +124,7 @@
         margin-top: 0.5em;
         line-height: 1.8;
       }
-      
+
       iframe {
         margin: 0.5em;
         padding: 1.2em;
@@ -143,6 +133,3 @@
     }
   }
 }
-
-
-
