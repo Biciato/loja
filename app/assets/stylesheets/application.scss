@@ -312,3 +312,303 @@ body, body > p, body > ol, body > ul {
     }
 
 }
+
+@media only screen and (max-width: 800px) {
+  body, body > p, body > ol, body > ul {
+    margin: 0em !important;
+    padding: 0;
+    background: black;
+  }
+
+    #menu-top {
+      position: relative;
+      background: goldenrod;
+      width: 77.0em;
+      height: 15.1em;
+      left: 18.5em;
+    
+      img {
+          border: none;
+          margin: 0;
+          overflow: visible;
+          float: right;
+          border: 0.4em outset gold;
+        }
+    
+      #linha1 {
+        height: 5.0em;
+        width: 61.2em;
+    
+        img {
+          float: left;
+          border: none;
+        }
+    
+        ul {
+          text-align: center;
+          padding: 0;
+          margin: 0;
+          width: 48.3em;
+          height: 5.0em;
+          border: none;
+          display: inline-block;
+    
+          li {
+            display: inline-block;
+            margin: 0.5em;
+            padding: 0.5em;
+            font-size: 1.5em;
+            padding: 0.5em;
+            width: 7.8em;
+            height: 1.4em;
+    
+            a {
+              text-decoration: none;
+              color: gold;
+            }
+          }
+        }
+      }
+    
+      #linha2 {
+        a {
+          img {
+            margin-top: 0.2em;
+          }
+        }
+      }
+    
+      #linha2 {
+        height: 5.0em;
+        width: 62.2em;
+    
+        form {
+          display: inline-block;
+          float: left;
+          margin: 0.5em 0;
+          border: none;
+          padding: 0em;
+          width: 44.8em;
+          height: 4.0em;
+    
+         input[type="text"] {
+            float: left;
+            margin-left: 0.5em;
+            padding: 0.5em;
+            height: 3.0em;
+            width: 35.8em;
+            background-color: black;
+            color: white;
+            font-size: 1.0em;
+            border: none;
+          }
+    
+          input[type="submit"] {
+            float: left;
+            font-family: Helvetica;
+            font-size: 1.0em;
+            line-height: 0.5em;
+            font-weight: bold;
+            margin: 0e;
+            padding: 0;
+            width: 6.9em;
+            height: 4.0em;
+            color: black;
+            background: gold;
+            border: none;
+          }
+        }
+    
+        ul {
+          float: left;
+          display: inline-block;
+          list-style-type: none;
+          width: 10.9em;
+          height: 4.0em;
+          margin: 0.5em 0.3em;
+          padding: 0;
+          background-color: gold;
+    
+          li {
+            display: inline-block;
+            width: 5.3em;
+            height: 4.0em;
+            padding: 0;
+            margin: 0;
+            float: left;
+    
+            a {
+              color: black;
+              text-decoration: none;
+              font-size: 1.0em;
+              height: inherit;
+              width: inherit;
+              text-align: center;
+              display: table-cell;
+              vertical-align: middle;
+            }
+    
+            a[href="signup"] {
+              font-weight: bold;
+            }
+          }
+    
+          li:first-child {
+            border-right: 1px solid black;
+          }
+        }
+    
+        a:hover {
+          color: gold;
+          background: black;
+        }
+      }
+    
+    
+    
+      #linha3 {
+        border: 0.1em solid black;
+        background: black;
+        height: 5.0em;
+        width: 63.2em;
+    
+        ul {
+          list-style-type: none;
+          margin: 0.2em;
+          padding: 0;
+          background-color: goldenrod;
+    
+          li {
+            float: left;
+            border-right: 0.1em solid black;
+            width: 7.4em;
+            height: 4.7em;
+            margin-top: 0.2em;
+            margin-left: 0.2em;
+            background: goldenrod;
+    
+            a, .dropbtn {
+              color: black;
+              width: inherit;
+              height: inherit;
+              text-align: center;
+              display: table-cell;
+              vertical-align: middle;
+              text-decoration: none;
+              font-size: 1.2em;
+            }
+          }
+        }
+      }
+    
+      #linha3 li a:hover, .dropdown:hover .dropbtn {background-color: silver;}
+    
+      #linha3 li.dropdown {display: inline-block;}
+    
+      #linha3 .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: silver;
+          min-width: 16.0em;
+          z-index: 1;
+    
+          h4 {
+            margin: 1.0em;
+          }
+      }
+    
+      #linha3 .dropdown-content a {
+          color: black;
+          padding: 0;
+          margin: 0 0 0 1.0em;
+          text-decoration: none;
+          display: block;
+          text-align: left;
+          font-size: 1.0em;
+          margin-bottom: 1.0em;
+      }
+    
+      #linha3 .dropdown-content a:hover {background-color: silver;}
+    
+      #linha3 .dropdown:hover .dropdown-content {display: block;}
+    }
+    
+    #menu-down {
+        border: 0.5px solid goldenrod;
+        background: goldenrod;
+        position: relative;
+        height: 18.0em;
+        width: 77.0em;
+        margin: 1.5em 0em 0em 21.5em;
+        clear: both;
+    
+        img {
+          border: 0.2em outset gold;
+          float: left;
+        }
+    
+        #d1 {
+          position: absolute;
+          left: 17.0em;
+    
+          a {
+            text-decoration: none;
+          }
+    
+          dt {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 0.4em;
+            border-bottom: 0.2em solid black;
+          }
+    
+          dd {
+            margin-left: 0;
+            display: block;
+          }
+        }
+    
+        #d2 {
+          position: absolute;
+          left: 37.0em;
+    
+          dt {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 0.4em;
+            border-bottom: 0.2em solid black;
+          }
+    
+          dd {
+            margin-left: 0px;
+            display: block;
+          }
+        }
+        #d3 {
+          position: absolute;
+          left: 55.0em;
+    
+          dt {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 0.4em;
+            border-bottom: 0.2em solid black;
+          }
+        }
+        p {
+          clear: both;
+          position: absolute;
+          font-size: 13px;
+          top: 140px;
+          left: 5px;
+        }
+    
+        telephone {
+          clear: both;
+          position: absolute;
+          font-size: 30px;
+          top: 180px;
+          left: 3px;
+        }
+      }  
+  }  
