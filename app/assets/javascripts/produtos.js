@@ -1,4 +1,4 @@
-$(function () {
+$(document).on("turbolinks:load", function() {
     var i = $("iframe");
     var p = $('p');
     var sd = $("span:contains('Descrição')");
