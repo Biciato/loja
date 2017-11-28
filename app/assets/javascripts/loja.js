@@ -30,7 +30,7 @@ $(function () {
 	});
 
 	$('img').click(function() {
-	  $(this).parent().find('a').click();		
+	  $(this).parent().children('h3').children('a').click();		
 	});
 	
 });

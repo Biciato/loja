@@ -99,3 +99,48 @@
 		}
 	}
 }	
+
+@media only screen and (max-width: 1500px) {
+  body {
+    margin: 0em !important;
+    padding: 0;
+    background: black;
+  }
+  .loja {
+	  #banner {
+		margin: 0.5em 0em 0em 15.5em;
+	  	}
+	  	
+	  h1 {
+		margin-left: 7.5em;
+      }	
+	
+	  #index {
+		left: 15.5em;
+	  }
+  }
+} 
+
+@media only screen and (max-width: 1200px) {
+  body {
+    margin: 0em !important;
+    padding: 0;
+    background: black;
+  }
+  .loja {
+	  #banner {
+		margin: 0.5em 0em 0em 6.5em;
+	  	}
+	  	
+	  h1 {
+		margin-left: 3.0em;
+      }	
+	
+	  #index {
+		left: 6.5em;
+	  }
+  }
+} 
+  	
+  
+  

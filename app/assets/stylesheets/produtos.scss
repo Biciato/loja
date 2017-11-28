@@ -133,3 +133,34 @@
     }
   }
 }
+
+
+@media only screen and (max-width: 1500px) {
+  body {
+    margin: 0em !important;
+    padding: 0;
+    background: black;
+  }
+
+  .produtos {
+    
+    #modelo {
+      left: 15.5em;
+    }
+  } 
+}
+@media only screen and (max-width: 1200px) {
+  body {
+    margin: 0em !important;
+    padding: 0;
+    background: black;
+  }
+  
+  .produtos {
+    
+    #modelo {
+      left: 6.5em;
+    }
+  }
+}
+
