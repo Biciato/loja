@@ -1,6 +1,7 @@
 class Carrinho < ApplicationRecord
   has_many :linha_items, dependent: :destroy
 
+  # method that adds a product to a cart
   def adicionar_produto(produto)
     corrente_item = linha_items.find_by(produto_id: produto.id)
     if corrente_item

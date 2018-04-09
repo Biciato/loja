@@ -83,6 +83,7 @@ class PedidosController < ApplicationController
       params.require(:pedido).permit(:nome, :endereco, :email, :tipo_pagamento)
     end
 
+    # make it sure that the cart is not empty
     def assegure_carrinho_nao_esta_vazio
       if @carrinho.linha_items.empty?
         redirect_to loja_index_url, notice: 'Seu carrinho está vazio'

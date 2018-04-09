@@ -7,7 +7,8 @@ class ProdutosController < ApplicationController
   def index
     @produtos = Produto.all
   end
-  
+
+  # go back to root url
   def volta
     redirect_to root_path
   end
@@ -92,7 +93,7 @@ class ProdutosController < ApplicationController
     def produto_params
       params.require(:produto).permit(:titulo, :image_url, :preco)
     end
-    
+
     def allow_iframe_requests
       response.headers.delete('X-Frame-Options')
     end

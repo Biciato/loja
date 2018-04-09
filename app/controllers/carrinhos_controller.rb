@@ -74,6 +74,7 @@ class CarrinhosController < ApplicationController
       params.fetch(:carrinho, {})
     end
 
+    # Make sure it's the right cart 
     def carrinho_invalido
       logger.error "Tentativa de acessar carrinho invalido #{params[:id]}"
       redirect_to loja_index_url, notice: 'Carrinho inválido'
